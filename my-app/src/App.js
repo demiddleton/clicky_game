@@ -3,7 +3,7 @@ import Card from "./components/Card";
 import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
 import cards from "./cards.json";
-import "./App.css";
+
 
 
 class App extends Component {
@@ -54,7 +54,7 @@ class App extends Component {
             clickCount={this.clickCount}
             id={card.id}
             key={card.id}
-            image={require("./Dogs/images/" + card.image)}
+            image={require("./images/" + card.image)}
           />
         ))}
       </Wrapper>
