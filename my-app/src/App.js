@@ -11,13 +11,13 @@ class App extends Component {
   state = {
     cards,
     score: 0,
-    highscore: 0
+    topscore: 0
   };
 
   gameOver = () => {
-    if (this.state.score > this.state.highscore) {
-      this.setState({highscore: this.state.score}, function() {
-        console.log(this.state.highscore);
+    if (this.state.score > this.state.topscore) {
+      this.setState({topscore: this.state.score}, function() {
+        console.log(this.state.topscore);
       });
     }
     this.state.cards.forEach(card => {
@@ -48,7 +48,7 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Header score={this.state.score} highscore={this.state.highscore}>Clicky Game</Header>
+        <Header score={this.state.score} topscore={this.state.topscore}>Clicky Game</Header>
         {this.state.cards.map(card => (
           <Card
             clickCount={this.clickCount}
