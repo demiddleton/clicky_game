@@ -1,0 +1,21 @@
+.navbar {
+    background: #5133e4;
+    min-height: 20px;
+    /* position: fixed; */
+    width: 100%;
+    color: #fff;
+    /* white-space: nowrap; */
+    text-align: center;
+
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+article, aside, footer, header, nav, section {
+    display: block;
+}
+
+body {
+    margin: auto;
